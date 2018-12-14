@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>DOM - querySelector</title>
+</head>
+<body>
+
+    <div id="teste1">1</div>
+    <div class="teste2">2</div>
+    <div class="teste2">2.2</div>
+        <!-- Será apresentado apenas a primeira declaração de classe -->
+    <p>3</p>
+    <p class="teste4">4</p>
+
+    <script>
+        console.log(
+            document.querySelector("#teste1")
+        )
+        console.log(
+            document.querySelector(".teste2")
+        )
+        console.log(
+            document.querySelector("p")
+        )
+        console.log(
+            document.querySelector("p.teste4").innerHTML
+        )
+    </script>
+
+</body>
+</html>
