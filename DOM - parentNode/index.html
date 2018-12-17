@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>DOM - appendChild</title>
+</head>
+<body>
+    <div id="linux">
+        <div class="ubuntu">Ubuntu</div>
+        <div class="deppin">Deppin</div>
+        <div class="debian">Debian</div>
+
+    </div>
+
+    <script>
+        //parentNode = É + ou - pegar o elemento pai a partir do filho
+        console.log(
+            document.querySelector(".ubuntu")
+        )
+        console.log(
+            document.querySelector(".ubuntu").parentNode
+        )
+        console.log(
+            document.querySelector(".ubuntu").parentNode.parentNode
+        )
+    </script>
+
+</body>
+</html>
