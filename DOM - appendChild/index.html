@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>DOM - appendChild</title>
+</head>
+<body>
+    <div id="volks">
+
+    </div>
+
+    <script>
+        var polo = document.createElement("p");
+        polo.innerHTML = "Polo 9n4 Sportline";
+
+        var golf = document.createElement("p");
+        golf.innerHTML = "Golf MK4 GTI";
+
+        document.getElementById("volks").appendChild(polo);
+        document.getElementById("volks").appendChild(golf);
+
+    </script>
+
+</body>
+</html>
