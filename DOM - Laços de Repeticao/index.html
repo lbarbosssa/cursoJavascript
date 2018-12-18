@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>DOM - Laços de Repetição</title>
+</head>
+<body>
+
+    <div class="js">react</div>
+    <div class="js">angular</div>
+    <div class="js">typescript</div>
+    <div class="js">es6</div>
+    
+
+    <script>
+        var js = document.getElementsByClassName('js');
+
+        array = [1, 2, 3, 4];
+        
+        for (i = 0; i < js.length; i++){
+            let texto = js[i].innerHTML;
+            js[i].innerHTML = 'curso ' + texto + ' js';
+        }
+
+        //o forEach nao funciona com html collection
+        array.forEach(function(element, index) {
+            if (element === 2){
+                array[index] = 'Vira outra cosia'
+            }
+        })
+        console.log(array);
+
+        // O map retorna uma nova lista clonando um arrai existente
+        var novoArray = array.map(function(element, index){
+            if (element === 1){
+                element = 'Vira outra coisa';
+            }
+            return element
+        })
+        console.log(novoArray);
+        
+        var i = 0;
+        while (i < 5){
+            console.log('oi', i);
+            i++;
+        }
+
+
+
+    </script>
+
+</body>
+</html>
