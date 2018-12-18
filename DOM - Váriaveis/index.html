@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>DOM - Váriaveis</title>
+</head>
+<body>
+    
+
+    <script>
+        var nome = "Lucas";
+        const sobrenome = "Barbosa";
+        //const são contsantes, variaveis que não pode mudar de valor
+
+        console.log(nome, sobrenome);
+
+        function teste(){
+            //Se não utilizamos var, o js cria a variavel como global, mesmo a partir da função
+            nome2 = "Luciana"
+        }
+
+        teste();
+
+        console.log(nome2, sobrenome)
+
+    </script>
+
+</body>
+</html>
