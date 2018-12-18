@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>DOM - Objetos</title>
+</head>
+<body>
+    
+
+    <script>
+        var carro = {
+            placa: 'abc-1234',
+            modelo: 'Golf',
+            carroceria: 'Hatch',
+            versao: 'GTI',
+            ano: 2017,
+            marca: 'Volkswagen',
+            opcionais: {
+                cambio: 'automático',
+                combustivel: 'Gasolina'
+                },
+            "outra-coisa": 'Valor de outra coisa' 
+            }
+
+            console.log(
+                carro, carro.opcionais
+            );
+            console.log(
+                carro.modelo, carro.ano, carro.opcionais.cambio
+            );
+            console.log(carro["outra-coisa"]);
+
+
+    </script>
+
+</body>
+</html>
