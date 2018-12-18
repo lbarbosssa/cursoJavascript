@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>DOM - Condicionais</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var marca = "Volkswagen";
+        var carro = "Fusca";
+        
+        var marca = "Fiat";
+        var carro = "Uno";
+
+        var marca2 = "Audi";
+
+        if (carro == "Fusca"){
+            console.log('Pode ir para o bgt')
+        }else if (marca == "Volkswagen"){
+            console.log('Sendo do grupo volks ta certo')
+        }else{
+            console.log('É só para quem é ...')
+        }
+
+        switch (marca2){
+            case "Audi":
+                console.log('É do grupo VW e tbm pode ir para o bgt')
+                break;
+            
+            case "Seat":
+                console.log('É do grupo VW e tbm pode ir para o bgt')
+                break;
+            
+            case "Porschee":
+                console.log('É do grupo VW e tbm pode ir para o bgt')
+                break;
+
+            default:
+                console.log('Se não for vw, não pode ir pro bgt')        
+                    
+        }
+
+
+
+    </script>
+
+</body>
+</html>
