@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <title>Eventos - Hover</title>
+    
+    <style>
+    .link{
+        color: red
+    }
+    .tra{
+        background-color: blue;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <a href="#" id="link">
+        <h1>Olá, tudo bem?</h1>
+    </a>
+
+    <table style="width: 100%">
+        <thead>
+            <th align="left">Nome</th>
+            <th align="left">Idade</th>
+        </thead>
+        <tbody>
+            <tr class="tr">
+                <td style="height: 30px">Alien</td>
+                <td style="height: 30px">2000</td>
+            </tr>
+            <tr class="tr">
+                <td style="height: 30px">Bixo Papão</td>
+                <td style="height: 30px">1000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var link = document.getElementById('link');
+        var trs = document.getElementsByClassName('tr');
+
+        link.addEventListener("mouseover", function() {
+            //Lista as classes adiciona a classe do ccs
+            link.classList.add("link");
+        })
+        link.addEventListener("mouseleave", function() {
+            link.classList.remove("link");
+        })
+
+        for (var i = 0; i < trs.length; i++){
+            trs[i].addEventListener("mouseover", function() {
+                //O this é o elemento local
+                this.classList.add("tra");
+            })
+
+            trs[i].addEventListener("mouseleave", function() {
+                this.classList.remove("tra");
+            })
+        }
+        
+    </script>
+
+</body>
+</html>
