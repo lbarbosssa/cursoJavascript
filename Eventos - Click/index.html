@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Eventos - Click</title>
+</head>
+<body>
+    <h4 id="title">Clique no botão</h4>
+    <button id="btn">Click</button>
+
+    <script>
+        var botao = document.getElementById('btn');
+        var titulo = document.getElementById('title');
+
+        //addEventLister é uma função do js, que rece dois parametros: nome do envento e a ação
+        botao.addEventListener('click', function() {
+            titulo.innerHTML = 'Você clicou';
+        })
+    </script>
+
+</body>
+</html>
