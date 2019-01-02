@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery - Seletores</title>    
+</head>
+<body>
+    <p class="p1">Lorem1.</p>
+    <p>Lorem2.</p>
+    <p id="p2">Lorem3.</p>
+    <p data-aula="p3">Lorem4.</p>
+
+
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        var p1 = $('.p1');
+        $('#p2').remove();
+        console.log(p1);
+        console.log($('p')[1]);
+        console.log($('[data-aula="p3"]'));
+    </script>
+</body>
+</html>
