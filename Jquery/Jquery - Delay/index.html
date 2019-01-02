@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery - Delay</title>   
+    
+</head>
+<body>
+
+    <button>Clique aqui</button>
+    <p class="msg">Olá Mundo!</p>
+    
+
+
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        var msg = $('.msg');
+
+        $('button').on("click", function(){
+            msg.delay(1000).fadeOut();    
+        })
+
+        $('button').on("mouseleave", function(){
+            //msg.delay("fast").fadeIn(); 
+            msg.delay("slow").fadeIn();    
+        })
+
+
+
+    </script>
+</body>
+</html>
