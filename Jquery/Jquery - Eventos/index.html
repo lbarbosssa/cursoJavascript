@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery - Eventos</title>   
+    
+    <style>
+        body{
+            background-color: #efefef
+        }
+        .box{
+            position: relative;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        button {
+            font-size: 2em;
+            background-color: #000;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="box">
+
+    </div>
+    <hr>
+    <button id="starting">Clique aqui</button>
+
+
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        var box = $('.box');
+        var starting = $('#starting');
+        starting.on("mouseenter", function(){
+            box.animate({left:'100px'}, 400)
+        })
+        starting.on("click", function(){
+            box.animate({
+                left:'300px',
+                width:'400px'
+            }, 400)
+        })
+        starting.on("mouseleave", function(){
+            box.animate({
+                left:'0px',
+                width:'100px'
+            }, 400)
+        })
+        
+    </script>
+</body>
+</html>
