@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery - Efeitos</title>   
+    
+    <style>
+        body{
+            background-color: #efefef
+        }
+        .box{
+            position: relative;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="box">
+
+    </div>
+
+
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+        var box = $('.box');
+        // animate recebe dois parametros, 1 = obj com seletores css e 2 duraçao e ms
+        box.hide();
+        box.fadeIn();
+        box.animate({left: "500px"}, 400)
+        box.animate({
+            width: "200px",
+            height: "200px"
+        }, 1000);
+        box.animate({
+            width: "100px",
+            height: "100px"
+        }, 1000)
+        box.animate({left: "0"}, 400);
+        box.fadeOut(1000)
+        
+       
+
+        </script>
+</body>
+</html>
